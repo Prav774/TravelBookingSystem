@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee 
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         id="WebApp_ID"
+         version="4.0">
+
+    <display-name>TravelBooking</display-name>
+
+    <!-- Welcome Page -->
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+
+    <!-- Add Booking Servlet -->
+    <servlet>
+        <servlet-name>AddBookingServlet</servlet-name>
+        <servlet-class>com.travel.servlet.AddBookingServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>AddBookingServlet</servlet-name>
+        <url-pattern>/AddBookingServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- View Booking Servlet -->
+    <servlet>
+        <servlet-name>ViewBookingServlet</servlet-name>
+        <servlet-class>com.travel.servlet.ViewBookingServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ViewBookingServlet</servlet-name>
+        <url-pattern>/ViewBookingServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+    <servlet-name>DeleteBookingServlet</servlet-name>
+    <servlet-class>com.travel.servlet.DeleteBookingServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>DeleteBookingServlet</servlet-name>
+    <url-pattern>/DeleteBookingServlet</url-pattern>
+</servlet-mapping>
+<servlet>
+    <servlet-name>EditBookingServlet</servlet-name>
+    <servlet-class>com.travel.servlet.EditBookingServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>EditBookingServlet</servlet-name>
+    <url-pattern>/EditBookingServlet</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>UpdateBookingServlet</servlet-name>
+    <servlet-class>com.travel.servlet.UpdateBookingServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>UpdateBookingServlet</servlet-name>
+    <url-pattern>/UpdateBookingServlet</url-pattern>
+</servlet-mapping>
+</web-app>
